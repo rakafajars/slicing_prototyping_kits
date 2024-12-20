@@ -66,6 +66,13 @@ class TextStyles {
     letterSpacing: 1,
   );
 
+  static TextStyle bodyXS = GoogleFonts.inter(
+    fontWeight: FontWeight.w400,
+    fontSize: 10,
+    color: ColorStyles.black,
+    letterSpacing: 1.5,
+  );
+
   static TextStyle actionActionM = GoogleFonts.inter(
     fontWeight: FontWeight.w600,
     fontSize: 12,

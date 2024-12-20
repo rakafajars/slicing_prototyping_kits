@@ -5,7 +5,12 @@ import '../utils/text_styles.dart';
 
 class ButtonGlobalWidget extends StatelessWidget {
   final void Function()? onPressed;
-  const ButtonGlobalWidget({super.key, this.onPressed});
+  final String? title;
+  const ButtonGlobalWidget({
+    super.key,
+    this.onPressed,
+    this.title,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +24,7 @@ class ButtonGlobalWidget extends StatelessWidget {
       ),
       onPressed: onPressed,
       child: Text(
-        'Next',
+        title ?? 'Next',
         style: TextStyles.actionActionM,
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:belajar_slicing_ui/models/personalise_experience_model.dart';
+import 'package:belajar_slicing_ui/screen/subcription_screen/subcription_screen.dart';
 import 'package:belajar_slicing_ui/utils/color_styles.dart';
 import 'package:belajar_slicing_ui/utils/text_styles.dart';
 import 'package:belajar_slicing_ui/widgets/button_global_widget.dart';
@@ -134,7 +135,15 @@ class _ExperienceScreenState extends State<ExperienceScreen> {
           child: ButtonGlobalWidget(
             onPressed: listPersonaliseExperiences
                     .any((element) => element.isSelected == true)
-                ? () {}
+                ? () {
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SubcriptionScreen(),
+                      ),
+                      (val) => false,
+                    );
+                  }
                 : null,
           ),
         ),
