@@ -1,9 +1,12 @@
+import 'package:belajar_slicing_ui/gen/assets.gen.dart';
 import 'package:belajar_slicing_ui/models/login_third_model.dart';
 import 'package:belajar_slicing_ui/utils/color_styles.dart';
 import 'package:belajar_slicing_ui/utils/text_styles.dart';
 import 'package:belajar_slicing_ui/widgets/button_global_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../../widgets/text_form_field_global_widget.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -40,6 +43,22 @@ class LoginScreen extends StatelessWidget {
                     'Welcome',
                     style: TextStyles.h1,
                   ),
+                  const Gap(24),
+                  const TextFormFieldGlobalWidget(
+                    title: 'Email Address',
+                  ),
+                  const Gap(16),
+                  TextFormFieldGlobalWidget(
+                    title: 'Password',
+                    suffixIcon: IconButton(
+                      onPressed: () {},
+                      icon: Assets.icons.eyeInvisible.image(
+                        height: 24,
+                        color: ColorStyles.neutralDarkLightest,
+                      ),
+                    ),
+                  ),
+                  const Gap(16),
                   Text(
                     'Forgot password?',
                     style: TextStyles.actionActionM.copyWith(
