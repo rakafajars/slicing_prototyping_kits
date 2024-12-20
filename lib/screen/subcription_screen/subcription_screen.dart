@@ -1,5 +1,6 @@
 import 'package:belajar_slicing_ui/gen/assets.gen.dart';
 import 'package:belajar_slicing_ui/models/subcriptions_model.dart';
+import 'package:belajar_slicing_ui/screen/login_screen/login_screen.dart';
 import 'package:belajar_slicing_ui/utils/color_styles.dart';
 import 'package:belajar_slicing_ui/utils/text_styles.dart';
 import 'package:belajar_slicing_ui/widgets/button_global_widget.dart';
@@ -254,7 +255,17 @@ class _SubcriptionScreenState extends State<SubcriptionScreen> {
           ),
           child: ButtonGlobalWidget(
             title: 'Subscribe',
-            onPressed: _selectedSubcriptions != null ? () {} : null,
+            onPressed: _selectedSubcriptions != null
+                ? () {
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginScreen(),
+                      ),
+                      (route) => false,
+                    );
+                  }
+                : null,
           ),
         ),
       ),

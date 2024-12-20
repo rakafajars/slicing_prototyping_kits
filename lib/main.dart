@@ -1,4 +1,5 @@
 import 'package:belajar_slicing_ui/screen/on_boarding_screen/on_boarding_screen.dart';
+import 'package:belajar_slicing_ui/utils/color_styles.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        scaffoldBackgroundColor: ColorStyles.neutralLightGreyLightLightest,
         useMaterial3: true,
       ),
       home: const OnBoardingScreen(),
