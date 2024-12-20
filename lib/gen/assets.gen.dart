@@ -7,157 +7,159 @@
 // ignore_for_file: type=lint
 // ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
-import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart' as _svg;
-import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/Add.svg
-  SvgGenImage get add => const SvgGenImage('assets/icons/Add.svg');
+  /// File path: assets/icons/Add.png
+  AssetGenImage get add => const AssetGenImage('assets/icons/Add.png');
 
-  /// File path: assets/icons/Apple.svg
-  SvgGenImage get apple => const SvgGenImage('assets/icons/Apple.svg');
+  /// File path: assets/icons/Apple.png
+  AssetGenImage get apple => const AssetGenImage('assets/icons/Apple.png');
 
-  /// File path: assets/icons/Arrow Down.svg
-  SvgGenImage get arrowDown => const SvgGenImage('assets/icons/Arrow Down.svg');
+  /// File path: assets/icons/Arrow Down.png
+  AssetGenImage get arrowDown =>
+      const AssetGenImage('assets/icons/Arrow Down.png');
 
-  /// File path: assets/icons/Arrow Left.svg
-  SvgGenImage get arrowLeft => const SvgGenImage('assets/icons/Arrow Left.svg');
+  /// File path: assets/icons/Arrow Left.png
+  AssetGenImage get arrowLeft =>
+      const AssetGenImage('assets/icons/Arrow Left.png');
 
-  /// File path: assets/icons/Arrow Right.svg
-  SvgGenImage get arrowRight =>
-      const SvgGenImage('assets/icons/Arrow Right.svg');
+  /// File path: assets/icons/Arrow Right.png
+  AssetGenImage get arrowRight =>
+      const AssetGenImage('assets/icons/Arrow Right.png');
 
-  /// File path: assets/icons/Arrow Up.svg
-  SvgGenImage get arrowUp => const SvgGenImage('assets/icons/Arrow Up.svg');
+  /// File path: assets/icons/Arrow Up.png
+  AssetGenImage get arrowUp => const AssetGenImage('assets/icons/Arrow Up.png');
 
-  /// File path: assets/icons/Camera.svg
-  SvgGenImage get camera => const SvgGenImage('assets/icons/Camera.svg');
+  /// File path: assets/icons/Camera.png
+  AssetGenImage get camera => const AssetGenImage('assets/icons/Camera.png');
 
-  /// File path: assets/icons/Categories.svg
-  SvgGenImage get categories =>
-      const SvgGenImage('assets/icons/Categories.svg');
+  /// File path: assets/icons/Categories.png
+  AssetGenImage get categories =>
+      const AssetGenImage('assets/icons/Categories.png');
 
-  /// File path: assets/icons/Chat.svg
-  SvgGenImage get chat => const SvgGenImage('assets/icons/Chat.svg');
+  /// File path: assets/icons/Chat.png
+  AssetGenImage get chat => const AssetGenImage('assets/icons/Chat.png');
 
-  /// File path: assets/icons/Check.svg
-  SvgGenImage get check => const SvgGenImage('assets/icons/Check.svg');
+  /// File path: assets/icons/Check.png
+  AssetGenImage get check => const AssetGenImage('assets/icons/Check.png');
 
-  /// File path: assets/icons/Close.svg
-  SvgGenImage get close => const SvgGenImage('assets/icons/Close.svg');
+  /// File path: assets/icons/Close.png
+  AssetGenImage get close => const AssetGenImage('assets/icons/Close.png');
 
-  /// File path: assets/icons/Create.svg
-  SvgGenImage get create => const SvgGenImage('assets/icons/Create.svg');
+  /// File path: assets/icons/Create.png
+  AssetGenImage get create => const AssetGenImage('assets/icons/Create.png');
 
-  /// File path: assets/icons/Delete.svg
-  SvgGenImage get delete => const SvgGenImage('assets/icons/Delete.svg');
+  /// File path: assets/icons/Delete.png
+  AssetGenImage get delete => const AssetGenImage('assets/icons/Delete.png');
 
-  /// File path: assets/icons/Edit.svg
-  SvgGenImage get edit => const SvgGenImage('assets/icons/Edit.svg');
+  /// File path: assets/icons/Edit.png
+  AssetGenImage get edit => const AssetGenImage('assets/icons/Edit.png');
 
-  /// File path: assets/icons/Energy.svg
-  SvgGenImage get energy => const SvgGenImage('assets/icons/Energy.svg');
+  /// File path: assets/icons/Energy.png
+  AssetGenImage get energy => const AssetGenImage('assets/icons/Energy.png');
 
-  /// File path: assets/icons/Explore.svg
-  SvgGenImage get explore => const SvgGenImage('assets/icons/Explore.svg');
+  /// File path: assets/icons/Explore.png
+  AssetGenImage get explore => const AssetGenImage('assets/icons/Explore.png');
 
-  /// File path: assets/icons/Eye Invisible.svg
-  SvgGenImage get eyeInvisible =>
-      const SvgGenImage('assets/icons/Eye Invisible.svg');
+  /// File path: assets/icons/Eye Invisible.png
+  AssetGenImage get eyeInvisible =>
+      const AssetGenImage('assets/icons/Eye Invisible.png');
 
-  /// File path: assets/icons/Eye Visible.svg
-  SvgGenImage get eyeVisible =>
-      const SvgGenImage('assets/icons/Eye Visible.svg');
+  /// File path: assets/icons/Eye Visible.png
+  AssetGenImage get eyeVisible =>
+      const AssetGenImage('assets/icons/Eye Visible.png');
 
-  /// File path: assets/icons/Facebook.svg
-  SvgGenImage get facebook => const SvgGenImage('assets/icons/Facebook.svg');
+  /// File path: assets/icons/Facebook.png
+  AssetGenImage get facebook =>
+      const AssetGenImage('assets/icons/Facebook.png');
 
-  /// File path: assets/icons/Filter.svg
-  SvgGenImage get filter => const SvgGenImage('assets/icons/Filter.svg');
+  /// File path: assets/icons/Filter.png
+  AssetGenImage get filter => const AssetGenImage('assets/icons/Filter.png');
 
-  /// File path: assets/icons/Google.svg
-  SvgGenImage get google => const SvgGenImage('assets/icons/Google.svg');
+  /// File path: assets/icons/Google.png
+  AssetGenImage get google => const AssetGenImage('assets/icons/Google.png');
 
-  /// File path: assets/icons/Hamburger Menu.svg
-  SvgGenImage get hamburgerMenu =>
-      const SvgGenImage('assets/icons/Hamburger Menu.svg');
+  /// File path: assets/icons/Hamburger Menu.png
+  AssetGenImage get hamburgerMenu =>
+      const AssetGenImage('assets/icons/Hamburger Menu.png');
 
-  /// File path: assets/icons/Heart Filled.svg
-  SvgGenImage get heartFilled =>
-      const SvgGenImage('assets/icons/Heart Filled.svg');
+  /// File path: assets/icons/Heart Filled.png
+  AssetGenImage get heartFilled =>
+      const AssetGenImage('assets/icons/Heart Filled.png');
 
-  /// File path: assets/icons/Heart Outlined.svg
-  SvgGenImage get heartOutlined =>
-      const SvgGenImage('assets/icons/Heart Outlined.svg');
+  /// File path: assets/icons/Heart Outlined.png
+  AssetGenImage get heartOutlined =>
+      const AssetGenImage('assets/icons/Heart Outlined.png');
 
-  /// File path: assets/icons/Image.svg
-  SvgGenImage get image => const SvgGenImage('assets/icons/Image.svg');
+  /// File path: assets/icons/Image.png
+  AssetGenImage get image => const AssetGenImage('assets/icons/Image.png');
 
-  /// File path: assets/icons/Inbox.svg
-  SvgGenImage get inbox => const SvgGenImage('assets/icons/Inbox.svg');
+  /// File path: assets/icons/Inbox.png
+  AssetGenImage get inbox => const AssetGenImage('assets/icons/Inbox.png');
 
-  /// File path: assets/icons/Info.svg
-  SvgGenImage get info => const SvgGenImage('assets/icons/Info.svg');
+  /// File path: assets/icons/Info.png
+  AssetGenImage get info => const AssetGenImage('assets/icons/Info.png');
 
-  /// File path: assets/icons/LinkedIn.svg
-  SvgGenImage get linkedIn => const SvgGenImage('assets/icons/LinkedIn.svg');
+  /// File path: assets/icons/LinkedIn.png
+  AssetGenImage get linkedIn =>
+      const AssetGenImage('assets/icons/LinkedIn.png');
 
-  /// File path: assets/icons/Minus.svg
-  SvgGenImage get minus => const SvgGenImage('assets/icons/Minus.svg');
+  /// File path: assets/icons/Minus.png
+  AssetGenImage get minus => const AssetGenImage('assets/icons/Minus.png');
 
-  /// File path: assets/icons/Placeholder.svg
-  SvgGenImage get placeholder =>
-      const SvgGenImage('assets/icons/Placeholder.svg');
+  /// File path: assets/icons/Placeholder.png
+  AssetGenImage get placeholder =>
+      const AssetGenImage('assets/icons/Placeholder.png');
 
-  /// File path: assets/icons/Play.svg
-  SvgGenImage get play => const SvgGenImage('assets/icons/Play.svg');
+  /// File path: assets/icons/Play.png
+  AssetGenImage get play => const AssetGenImage('assets/icons/Play.png');
 
-  /// File path: assets/icons/Profile.svg
-  SvgGenImage get profile => const SvgGenImage('assets/icons/Profile.svg');
+  /// File path: assets/icons/Profile.png
+  AssetGenImage get profile => const AssetGenImage('assets/icons/Profile.png');
 
-  /// File path: assets/icons/Search.svg
-  SvgGenImage get search => const SvgGenImage('assets/icons/Search.svg');
+  /// File path: assets/icons/Search.png
+  AssetGenImage get search => const AssetGenImage('assets/icons/Search.png');
 
-  /// File path: assets/icons/Send.svg
-  SvgGenImage get send => const SvgGenImage('assets/icons/Send.svg');
+  /// File path: assets/icons/Send.png
+  AssetGenImage get send => const AssetGenImage('assets/icons/Send.png');
 
-  /// File path: assets/icons/Settings.svg
-  SvgGenImage get settings => const SvgGenImage('assets/icons/Settings.svg');
+  /// File path: assets/icons/Settings.png
+  AssetGenImage get settings =>
+      const AssetGenImage('assets/icons/Settings.png');
 
-  /// File path: assets/icons/Shopping Bag Filled.svg
-  SvgGenImage get shoppingBagFilled =>
-      const SvgGenImage('assets/icons/Shopping Bag Filled.svg');
+  /// File path: assets/icons/Shopping Bag Filled.png
+  AssetGenImage get shoppingBagFilled =>
+      const AssetGenImage('assets/icons/Shopping Bag Filled.png');
 
-  /// File path: assets/icons/Shopping Bag Outlined.svg
-  SvgGenImage get shoppingBagOutlined =>
-      const SvgGenImage('assets/icons/Shopping Bag Outlined.svg');
+  /// File path: assets/icons/Shopping Bag Outlined.png
+  AssetGenImage get shoppingBagOutlined =>
+      const AssetGenImage('assets/icons/Shopping Bag Outlined.png');
 
-  /// File path: assets/icons/Sort.svg
-  SvgGenImage get sort => const SvgGenImage('assets/icons/Sort.svg');
+  /// File path: assets/icons/Sort.png
+  AssetGenImage get sort => const AssetGenImage('assets/icons/Sort.png');
 
-  /// File path: assets/icons/Star Filled.svg
-  SvgGenImage get starFilled =>
-      const SvgGenImage('assets/icons/Star Filled.svg');
+  /// File path: assets/icons/Star Filled.png
+  AssetGenImage get starFilled =>
+      const AssetGenImage('assets/icons/Star Filled.png');
 
-  /// File path: assets/icons/Star Outlined.svg
-  SvgGenImage get starOutlined =>
-      const SvgGenImage('assets/icons/Star Outlined.svg');
+  /// File path: assets/icons/Star Outlined.png
+  AssetGenImage get starOutlined =>
+      const AssetGenImage('assets/icons/Star Outlined.png');
 
-  /// File path: assets/icons/Store.svg
-  SvgGenImage get store => const SvgGenImage('assets/icons/Store.svg');
+  /// File path: assets/icons/Store.png
+  AssetGenImage get store => const AssetGenImage('assets/icons/Store.png');
 
-  /// File path: assets/icons/Success.svg
-  SvgGenImage get success => const SvgGenImage('assets/icons/Success.svg');
+  /// File path: assets/icons/Success.png
+  AssetGenImage get success => const AssetGenImage('assets/icons/Success.png');
 
-  /// File path: assets/icons/Warning.svg
-  SvgGenImage get warning => const SvgGenImage('assets/icons/Warning.svg');
+  /// File path: assets/icons/Warning.png
+  AssetGenImage get warning => const AssetGenImage('assets/icons/Warning.png');
 
   /// List of all assets
-  List<SvgGenImage> get values => [
+  List<AssetGenImage> get values => [
         add,
         apple,
         arrowDown,
@@ -210,75 +212,79 @@ class Assets {
   static const $AssetsIconsGen icons = $AssetsIconsGen();
 }
 
-class SvgGenImage {
-  const SvgGenImage(
+class AssetGenImage {
+  const AssetGenImage(
     this._assetName, {
     this.size,
     this.flavors = const {},
-  }) : _isVecFormat = false;
-
-  const SvgGenImage.vec(
-    this._assetName, {
-    this.size,
-    this.flavors = const {},
-  }) : _isVecFormat = true;
+  });
 
   final String _assetName;
+
   final Size? size;
   final Set<String> flavors;
-  final bool _isVecFormat;
 
-  _svg.SvgPicture svg({
+  Image image({
     Key? key,
-    bool matchTextDirection = false,
     AssetBundle? bundle,
-    String? package,
+    ImageFrameBuilder? frameBuilder,
+    ImageErrorWidgetBuilder? errorBuilder,
+    String? semanticLabel,
+    bool excludeFromSemantics = false,
+    double? scale,
     double? width,
     double? height,
-    BoxFit fit = BoxFit.contain,
+    Color? color,
+    Animation<double>? opacity,
+    BlendMode? colorBlendMode,
+    BoxFit? fit,
     AlignmentGeometry alignment = Alignment.center,
-    bool allowDrawingOutsideViewBox = false,
-    WidgetBuilder? placeholderBuilder,
-    String? semanticsLabel,
-    bool excludeFromSemantics = false,
-    _svg.SvgTheme? theme,
-    ColorFilter? colorFilter,
-    Clip clipBehavior = Clip.hardEdge,
-    @deprecated Color? color,
-    @deprecated BlendMode colorBlendMode = BlendMode.srcIn,
-    @deprecated bool cacheColorFilter = false,
+    ImageRepeat repeat = ImageRepeat.noRepeat,
+    Rect? centerSlice,
+    bool matchTextDirection = false,
+    bool gaplessPlayback = true,
+    bool isAntiAlias = false,
+    String? package,
+    FilterQuality filterQuality = FilterQuality.low,
+    int? cacheWidth,
+    int? cacheHeight,
   }) {
-    final _svg.BytesLoader loader;
-    if (_isVecFormat) {
-      loader = _vg.AssetBytesLoader(
-        _assetName,
-        assetBundle: bundle,
-        packageName: package,
-      );
-    } else {
-      loader = _svg.SvgAssetLoader(
-        _assetName,
-        assetBundle: bundle,
-        packageName: package,
-        theme: theme,
-      );
-    }
-    return _svg.SvgPicture(
-      loader,
+    return Image.asset(
+      _assetName,
       key: key,
-      matchTextDirection: matchTextDirection,
+      bundle: bundle,
+      frameBuilder: frameBuilder,
+      errorBuilder: errorBuilder,
+      semanticLabel: semanticLabel,
+      excludeFromSemantics: excludeFromSemantics,
+      scale: scale,
       width: width,
       height: height,
+      color: color,
+      opacity: opacity,
+      colorBlendMode: colorBlendMode,
       fit: fit,
       alignment: alignment,
-      allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
-      placeholderBuilder: placeholderBuilder,
-      semanticsLabel: semanticsLabel,
-      excludeFromSemantics: excludeFromSemantics,
-      colorFilter: colorFilter ??
-          (color == null ? null : ColorFilter.mode(color, colorBlendMode)),
-      clipBehavior: clipBehavior,
-      cacheColorFilter: cacheColorFilter,
+      repeat: repeat,
+      centerSlice: centerSlice,
+      matchTextDirection: matchTextDirection,
+      gaplessPlayback: gaplessPlayback,
+      isAntiAlias: isAntiAlias,
+      package: package,
+      filterQuality: filterQuality,
+      cacheWidth: cacheWidth,
+      cacheHeight: cacheHeight,
+    );
+  }
+
+  ImageProvider provider({
+    AssetBundle? bundle,
+    String? package,
+  }) {
+    return AssetImage(
+      _assetName,
+      bundle: bundle,
+      package: package,
     );
   }
 

@@ -1,3 +1,4 @@
+import 'package:belajar_slicing_ui/gen/assets.gen.dart';
 import 'package:belajar_slicing_ui/models/subcriptions_model.dart';
 import 'package:belajar_slicing_ui/utils/color_styles.dart';
 import 'package:belajar_slicing_ui/utils/text_styles.dart';
@@ -72,87 +73,120 @@ class _SubcriptionScreenState extends State<SubcriptionScreen> {
 
                         setState(() {});
                       },
-                      child: Container(
-                        margin: const EdgeInsets.symmetric(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 24,
                         ),
-                        padding: const EdgeInsets.all(
-                          16,
-                        ),
-                        decoration: BoxDecoration(
-                          color: _selectedSubcriptions == subcription
-                              ? ColorStyles.highlightPrimaryLightest
-                              : null,
-                          borderRadius: BorderRadius.circular(
-                            12,
-                          ),
-                          border: _selectedSubcriptions == subcription
-                              ? null
-                              : Border.all(
-                                  color: ColorStyles.neutralLightGreyDark,
-                                ),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          alignment: Alignment.topRight,
                           children: [
-                            Row(
-                              children: [
-                                Radio<SubcriptionsModel>(
-                                  value: subcription,
-                                  groupValue: _selectedSubcriptions,
-                                  activeColor:
-                                      ColorStyles.highlightPrimaryDarkest,
-                                  onChanged: (value) {
-                                    _selectedSubcriptions = value;
-
-                                    setState(() {});
-                                  },
-                                  visualDensity: const VisualDensity(
-                                    horizontal: -4,
-                                    vertical: -4,
-                                  ),
+                            Container(
+                              padding: const EdgeInsets.all(
+                                16,
+                              ),
+                              decoration: BoxDecoration(
+                                color: _selectedSubcriptions == subcription
+                                    ? ColorStyles.highlightPrimaryLightest
+                                    : null,
+                                borderRadius: BorderRadius.circular(
+                                  12,
                                 ),
-                                const Gap(4),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      subcription.namePackage,
-                                      style: TextStyles.h4.copyWith(
-                                        color: ColorStyles.neutralDarkDarkest,
+                                border: _selectedSubcriptions == subcription
+                                    ? null
+                                    : Border.all(
+                                        color: ColorStyles.neutralLightGreyDark,
                                       ),
-                                    ),
-                                    Visibility(
-                                      visible:
-                                          subcription.priceDiscount != null,
-                                      child: Text(
-                                        '${subcription.priceDiscount} discount',
-                                        style: TextStyles.bodyXS.copyWith(
-                                          color: ColorStyles
-                                              .highlightPrimaryDarkest,
+                              ),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Radio<SubcriptionsModel>(
+                                        value: subcription,
+                                        groupValue: _selectedSubcriptions,
+                                        activeColor:
+                                            ColorStyles.highlightPrimaryDarkest,
+                                        onChanged: (value) {
+                                          _selectedSubcriptions = value;
+
+                                          setState(() {});
+                                        },
+                                        visualDensity: const VisualDensity(
+                                          horizontal: -4,
+                                          vertical: -4,
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                )
-                              ],
+                                      const Gap(4),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            subcription.namePackage,
+                                            style: TextStyles.h4.copyWith(
+                                              color: ColorStyles
+                                                  .neutralDarkDarkest,
+                                            ),
+                                          ),
+                                          Visibility(
+                                            visible:
+                                                subcription.priceDiscount !=
+                                                    null,
+                                            child: Text(
+                                              '${subcription.priceDiscount} discount',
+                                              style: TextStyles.bodyXS.copyWith(
+                                                color: ColorStyles
+                                                    .highlightPrimaryDarkest,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                    children: [
+                                      Text(
+                                        subcription.price,
+                                        style: TextStyles.h3.copyWith(
+                                          color: ColorStyles.neutralDarkDarkest,
+                                        ),
+                                      ),
+                                      Text(
+                                        subcription.duration,
+                                        style: TextStyles.bodyXS.copyWith(
+                                          color: ColorStyles.neutralDarkDarkest,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Text(
-                                  subcription.price,
-                                  style: TextStyles.h3.copyWith(
-                                    color: ColorStyles.neutralDarkDarkest,
+                            Visibility(
+                              visible: _selectedSubcriptions == subcription,
+                              child: Positioned(
+                                top: -10,
+                                child: Container(
+                                  height: 24,
+                                  width: 24,
+                                  decoration: const BoxDecoration(
+                                    color: ColorStyles.highlightPrimaryDarkest,
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: Center(
+                                    child: Assets.icons.starFilled.image(
+                                      width: 12,
+                                      height: 12,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
-                                Text(
-                                  subcription.duration,
-                                  style: TextStyles.bodyXS.copyWith(
-                                    color: ColorStyles.neutralDarkDarkest,
-                                  ),
-                                ),
-                              ],
+                              ),
                             ),
                           ],
                         ),
@@ -192,9 +226,9 @@ class _SubcriptionScreenState extends State<SubcriptionScreen> {
                       ),
                       child: Row(
                         children: [
-                          const Icon(
-                            Icons.star,
-                            color: ColorStyles.highlightPrimaryDarkest,
+                          Assets.icons.starFilled.image(
+                            width: 16,
+                            height: 16,
                           ),
                           const Gap(8),
                           Text(

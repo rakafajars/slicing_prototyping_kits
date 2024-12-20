@@ -1,3 +1,4 @@
+import 'package:belajar_slicing_ui/gen/assets.gen.dart';
 import 'package:belajar_slicing_ui/models/personalise_experience_model.dart';
 import 'package:belajar_slicing_ui/screen/subcription_screen/subcription_screen.dart';
 import 'package:belajar_slicing_ui/utils/color_styles.dart';
@@ -110,9 +111,13 @@ class _ExperienceScreenState extends State<ExperienceScreen> {
                             Visibility(
                               visible:
                                   listPersonaliseExperiences[index].isSelected,
-                              child: const Icon(
-                                Icons.check,
-                                color: ColorStyles.highlightPrimaryDarkest,
+                              // child: const Icon(
+                              //   Icons.check,
+                              //   color: ColorStyles.highlightPrimaryDarkest,
+                              // ),
+                              child: Assets.icons.check.image(
+                                width: 16,
+                                height: 16,
                               ),
                             ),
                           ],
