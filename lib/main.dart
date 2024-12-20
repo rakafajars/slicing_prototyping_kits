@@ -11,14 +11,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        scaffoldBackgroundColor: ColorStyles.neutralLightGreyLightLightest,
-        useMaterial3: true,
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          scaffoldBackgroundColor: ColorStyles.neutralLightGreyLightLightest,
+          useMaterial3: true,
+        ),
+        home: const OnBoardingScreen(),
       ),
-      home: const OnBoardingScreen(),
     );
   }
 }

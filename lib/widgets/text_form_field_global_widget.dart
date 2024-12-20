@@ -5,12 +5,18 @@ import 'package:flutter/material.dart';
 class TextFormFieldGlobalWidget extends StatelessWidget {
   final String title;
   final Widget? suffixIcon;
-  const TextFormFieldGlobalWidget(
-      {super.key, required this.title, this.suffixIcon});
+  final bool obscureText;
+  const TextFormFieldGlobalWidget({
+    super.key,
+    required this.title,
+    this.suffixIcon,
+    this.obscureText = false,
+  });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: obscureText,
       decoration: InputDecoration(
         hintText: title,
         hintStyle: TextStyles.bodyM.copyWith(

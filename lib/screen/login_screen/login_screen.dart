@@ -8,12 +8,20 @@ import 'package:gap/gap.dart';
 
 import '../../widgets/text_form_field_global_widget.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  bool _obscureText = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Column(
         children: [
           Expanded(
@@ -50,9 +58,16 @@ class LoginScreen extends StatelessWidget {
                   const Gap(16),
                   TextFormFieldGlobalWidget(
                     title: 'Password',
+                    obscureText: _obscureText,
                     suffixIcon: IconButton(
-                      onPressed: () {},
-                      icon: Assets.icons.eyeInvisible.image(
+                      onPressed: () {
+                        _obscureText = !_obscureText;
+                        setState(() {});
+                      },
+                      icon: Image.asset(
+                        _obscureText
+                            ? Assets.icons.eyeInvisible.path
+                            : Assets.icons.eyeVisible.path,
                         height: 24,
                         color: ColorStyles.neutralDarkLightest,
                       ),
